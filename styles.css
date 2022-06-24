@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    margin: 1rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display';
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.description {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+    margin: 1rem 0;
+}
+
+.description img {
+    width: 16px;
+    margin-right: 0.5rem;
+    margin-top: 0.2rem;
+}
+
+.description p {
+    width: 90%;
+}
+
+.image-cake {
+    width: 100%;
+}
+
+.yields-time {
+    margin: 1rem 0;
+}
+
+.yields article,
+.time,
+.time article {
+    display: flex;
+}
+
+.time {
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #333333;
+}
+
+.material-symbols-outlined {
+    margin-right: 0.5rem;
+}
+
+.yields .material-symbols-outlined,
+.yields .subtitle {
+    color: #F2994A;
+}
+
+.time .material-symbols-outlined {
+    color: #4F4F4F;
+}
+
+.ingredients h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: 400;
+    color: #333333;
+}
+
+.graham-cracker h3 {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 1rem;
+}
+
+.chessecake h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 1.5rem 0;
+}
+
+.graham-cracker p,
+.chessecake p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+    width: 90%;
+}
+
+li {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.square {
+    border: 1px solid #828282;
+    border-radius: 4px;
+    width: 21px;
+    height: 21px;
+    margin-right: 0.3rem;
+}
+
+.instructions h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin: 1.5rem 0;
+}
+
+.number {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background: #F2994A;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.instructions li p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 85%;
+    color: #333333;
+}
+
+.source,
+a {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #BDBDBD;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 70%;
+        margin: 3rem auto;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
+
+    .description p {
+        width: 65%;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 1.5rem;
+    }
+
+    .yields-time {
+        padding-top: 1.5rem;
+        min-width: 20%;
+        width: 130%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        height: 100%;
+    }
+
+    .time {
+        flex-direction: column;
+    }
+
+    .yields,
+    .time article {
+        margin: 1rem 0;
+        display: flex;
+        padding: 0 15%;
+    }
+
+    .title {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .ingredients h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .graham-cracker h3,
+    .chessecake h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .graham-cracker p,
+    .chessecake p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .source,
+    a {
+        font-size: 16px;
+    }
+
+}
